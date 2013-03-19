@@ -1,0 +1,596 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta content="text/html; charset=gb2312" http-equiv="Content-Type">
+		<title>电商对比搜索</title>
+		<meta content="当当网，亚马逊，京东商城对比搜索，qiguomaer@bupt" name="keywords">
+		<meta content="当当网，亚马逊，京东商城对比搜索" name="description">
+		<!--
+		<link type="text/css" rel="stylesheet" href="">
+		-->
+		<style type="text/css" >
+			@charset "utf-8";
+			body{
+				margin:0 0 0 0;
+				font: 12px "Lucida Grande",Arial,Verdana,Helvetica,sans-serif;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			img {
+				border: 0 none;
+			}
+			ul, li {
+				list-style: none outside none;
+				margin: 0;
+				padding: 0;
+			}
+			.topbox{
+				width:100%;
+				height:30px;
+				line-height:30px;
+				font-size:12px;
+				background: url("../vs/topboxbg.gif") repeat-x scroll 0 0 transparent;
+				margin-left: auto; 
+				margin-right: auto;
+			}
+			.topboxa, .header, .searchbox, .nav, .wzabox, .wzdh, .footer{
+				width:980px;
+				margin:0 auto;
+				overflow:hidden;
+			}
+			.topinfo{
+				width:50%;
+				float:left;
+				color:#888888;
+			}
+			.topa span{
+				display:block;
+				float:right;
+				padding-left:18px;
+				margin-left:8px;
+				overfloat:hidden;
+			}
+			.topa span a{
+				color:#36C;
+			}
+			.topa span a:hover{
+				color:#900;
+			}
+			#topa2{
+				background: url("../vs/topa2.gif") no-repeat scroll left center transparent;
+			}
+			.searchbox {
+				background: url("../vs/searchbg.gif") no-repeat scroll 0 0 transparent;
+				height: 154px;
+				margin-top: 6px;
+				overflow: hidden;
+			}
+			.searchtt {
+				height: 32px;
+				margin: 22px auto 0;
+				width: 337px;
+			}
+			.searchform {
+				margin: 10px auto 0;
+				width: 650px;
+			}
+			.searchformico {
+				background: url("../vs/searchico.gif") no-repeat scroll left top transparent;
+				float: left;
+				height: 65px;
+				overflow: hidden;
+				width: 49px;
+			}
+			.searchformbox {
+				float: left;
+				margin-left: 10px;
+				margin-top: 10px;
+				overflow: hidden;
+			}
+			#leftsel, #rightsel {
+				width: 100px;
+				font-size:30px;
+			}
+			#keyword {
+				border: 2px solid #DDDDDD;
+				height: 32px;
+				width: 470px;
+			}
+			#ssbotton {
+				background: url("../vs/ssbotton.gif") no-repeat scroll 0 0 transparent;
+				border: 0 none;
+				color: #707070;
+				cursor: pointer;
+				font-size: 14px;
+				font-weight: bold;
+				height: 32px;
+				width: 94px;
+			}
+			#ssbotton:hover {
+				color: #FF0000;
+			}
+			.searchselect {
+				margin-bottom: 5px;
+				overflow: hidden;
+			}
+			.searchselect span {
+				display: block;
+				float: left;
+			}
+			.vssel {
+				color: #888888;
+				font-family: Arial,Helvetica,sans-serif;
+				font-size: 12px;
+				line-height: 20px;
+				text-align: center;
+				width: 40px;
+			}
+			.leftsel {
+				margin-left: 145px;
+			}
+			.select_info_left{
+				color: green;
+				font-size: 120%;
+				font-weight: bold;
+	
+			}
+			.select_info_right{
+				color: green;
+				font-size: 120%;
+				font-weight: bold;
+			}
+			#uboxstyle .select_box {
+				height: 24px;
+				width: 100px;
+			}
+			#macstyle .select_box {
+				height: 24px;
+				width: 91px;
+			}
+			#tm2008style .select_box {
+				height: 24px;
+				width: 102px;
+			}
+			.nava {
+				background: url("../vs/navabg.gif") no-repeat scroll 0 0 transparent;
+				height: 31px;
+				overflow: hidden;
+				width: 100%;
+			}
+			.nava ul {
+				margin-left: 20px;
+			}
+			.nava ul li {
+				float: left;
+			}
+			.navl {
+				line-height: 28px;
+				margin: 3px 20px 0;
+			}
+			.navl a:hover {
+				color: #FFFFCC;
+			}
+			#current {
+				background: url("../vs/Currentbg.gif") no-repeat scroll 0 0 transparent;
+				line-height: 31px;
+				text-align: center;
+				width: 94px;
+			}
+			#current a {
+				color: #346989;
+				font-size: 14px;
+			}
+			.nava ul li a {
+				color: #FFFFFF;
+				font-size: 13px;
+				font-weight: bold;
+				text-decoration: none;
+			}
+			.navb {
+				background: url("../vs/navbbg.gif") no-repeat scroll 0 0 transparent;
+				color: #4778A5;
+				font-size: 12px;
+				height: 34px;
+				line-height: 34px;
+				overflow: hidden;
+				width: 100%;
+			}
+			.navb div {
+				float: left;
+			}
+			.today {
+				margin-left: 23px;
+			}
+			.myip {
+				margin-left: 20px;
+			}
+			.header {
+				height: 80px;
+			}
+			.logo {
+				float: left;
+				margin-top: 20px;
+			}
+			#weather {
+				float: right;
+				margin-right: 20px;
+			}
+			.wzabox {
+				margin-top: 20px;
+			}
+			.wzabox div ul li {
+				float: left;
+				height: 64px;
+				width: 90px;
+			}
+			.wzabox div ul li span {
+				display: block;
+			}
+			.wzabox div ul {
+				margin-left: 80px;
+			}
+			.newswz, .shopwz {
+				float: left;
+				height: 64px;
+				width: 480px;
+			}
+			.newswz {
+				margin-left: 15px;
+			}
+			.newswz {
+				background: url("../vs/wza_03.gif") no-repeat scroll left center transparent;
+			}
+			.shopwz {
+				background: url("../vs/wza_05.gif") no-repeat scroll left center transparent;
+			}
+			.newswz:hover {
+				background: url("../vs/wzb_03.gif") no-repeat scroll left center transparent;
+			}
+			.shopwz:hover {
+				background: url("../vs/wzb_05.gif") no-repeat scroll left center transparent;
+			}
+			.wzabox div ul li a {
+				display: block;
+				height: 64px;
+				width: 90px;
+			}
+			a#wzaa {
+				background: url("../vs/wza_08.gif") no-repeat scroll center center transparent;
+			}
+			a#wzaa:hover {
+				background: url("../vs/wzb_08.gif") no-repeat scroll center center transparent;
+			}
+			a#wzab {
+				background: url("../vs/wza_10.gif") no-repeat scroll center center transparent;
+			}
+			a#wzab:hover {
+			background: url("../vs/wzb_10.gif") no-repeat scroll center center transparent;
+			}
+			a#wzac {
+				background: url("../vs/wza_12.gif") no-repeat scroll center center transparent;
+			}
+			a#wzac:hover {
+				background: url("../vs/wzb_12.gif") no-repeat scroll center center transparent;
+			}
+			a#wzad {
+				background: url("../vs/wza_14.gif") no-repeat scroll center center transparent;
+			}		
+			a#wzad:hover {
+				background: url("../vs/wzb_14.gif") no-repeat scroll center center transparent;
+			}
+			a#wzae {
+				background: url("../vs/wza_17.gif") no-repeat scroll center center transparent;
+			}
+			a#wzae:hover {
+				background: url("../vs/wzb_17.gif") no-repeat scroll center center transparent;
+			}
+			a#wzaf {
+				background: url("../vs/wza_19.gif") no-repeat scroll center center transparent;
+			}
+			a#wzaf:hover {
+				background: url("../vs/wzb_19.gif") no-repeat scroll center center transparent;
+			}
+			a#wzag {
+				background: url("../vs/wza_21.gif") no-repeat scroll center center transparent;
+			}
+			a#wzag:hover {
+				background: url("../vs/wzb_21.gif") no-repeat scroll center center transparent;
+			}
+			a#wzah {
+				background: url("../vs/wza_23.gif") no-repeat scroll center center transparent;
+			}
+			a#wzah:hover {
+				background: url("../vs/wzb_23.gif") no-repeat scroll center center transparent;
+			}
+			body {
+				color: #000000;
+				font: 14px/1.5 Tahoma,Helvetica,arial,sans-serif;
+			}
+			#ftw {
+				background: none repeat scroll 0 0 #E8E8E8;
+				border-top: 3px solid #3AA2A2;
+				padding-bottom: 30px;
+				margin-top: 1cm;
+				margin-left: auto; 
+				margin-right: auto;				
+			}
+			#ft {
+				clear: both;
+				margin: 0 auto;
+				width: 960px;
+			}
+			#ft .ftbox {
+				border-left: 1px dotted #A5A5A5;
+				border-right: 1px dotted #F7F7F7;
+				float: left;
+				height: 140px;
+				padding: 20px 0 20px 25px;
+				width: 158px;
+			}
+			#ft .ftbox h3 {
+				color: #3E4545;
+				margin-bottom: 8px;
+			}
+			h1, h2, h3, h4, h5, h6 {
+				font-size: 100%;
+			}
+			#ft .ftbox ul {
+				padding-left: 16px;
+			}
+			#ft .ftbox li {
+				color: #666666;
+				font-size: 12px;
+				line-height: 1.8;
+				list-style: disc outside none;
+			}
+			a {
+				text-decoration: none;
+			}
+			#ft .ftbox a {
+				color: #3E4545;
+			}
+			#ft .service {
+				border-right-color: #A5A5A5;
+				color: #666666;
+				font-family: 'Microsoft Yahei',Helvetica,arial,sans-serif;
+				padding-right: 25px;
+				text-align: center;
+				width: 168px;
+				background: url("../vs/logo-qiguomaer.gif") no-repeat scroll center center transparent;
+			}			
+			#ft .service .num {
+    			color: #555555;
+				font: 20px/32px Helvetica,arial;
+				position:relative;
+				bottom:-114px
+			}
+		</style>
+	</head>
+	<body>
+		<div class="topbox">
+			<div class="topboxa">
+				<div class="topinfo">
+					<span>电商对比搜索，搜一下，就知道！</span>
+				</div>
+				<div class="topa">
+					<span id="topa2">
+						<a onclick="window.external.addFavorite(location.href,document.title)" href="#">加入收藏</a>
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="header">
+			<div class="logo">
+				<a href="vs-home.html">
+					<img width="202" height="48" alt="电商对比" src="vs/logo.gif">
+				</a>
+			</div>
+		</div>
+		<div class="nav">
+			<div class="nava">
+				<ul>
+					<li id="current">
+						<a href="http://localhost/home.html">首页</a>
+					</li>
+					<li class="navl">
+						<a href="http://www.dangdang.com" target="_blank">当当网</a>
+					</li>
+					<li class="navl">
+						<a href="http://www.amazon.cn" target="_blank">亚马逊</a>
+					</li>
+					<li class="navl">
+						<a href="http://www.360buy.com" target="_blank">京东商城</a>
+					</li>
+					<li class="navl">
+						<a href="http://www.tmall.com" target="_blank">天猫</a>
+					</li>
+					<li class="navl">
+						<a href="http://www.etao.com" target="_blank">一淘</a>
+					</li>
+				</ul>
+			</div>
+			<div class="navb">
+				<div class="myip"></div>
+				<div id="weather">
+					<iframe width="250" height="25" scrolling="no" frameborder="0" allowTransparency="true" src="http://t.xidie.com/skin/2012-0226.html">
+					</iframe>
+				</div>
+			</div>
+		</div>
+		<div class="searchbox">
+			<div class="searchtt">
+				<img width="337" height="32" alt="电商对比搜索" src="vs/searchtt.gif">
+			</div>
+			<div class="searchform">
+				<div class="searchformico"></div>
+				<div class="searchformbox">
+					<form id="form1" class="niceform" method="get" action="vs-search.php" name="form1">
+						<div id="tm2008style" class="searchselect">
+							<span class="leftsel">
+								<div class="select_info_left">当当网</div>								
+							</span>
+							<span class="vssel">VS</span>
+							<span class="rightsel">
+								<div class="select_info_right">亚马逊</div>
+							</span>
+						</div>
+						<div class="searchinput">
+							<input id="keyword" name="keyword">
+							<input id="ssbotton" type ="submit" value ="对比搜索">
+							<!--<input id="ssbotton" type="button" name="Submit2" value="对比搜索" onclick="javascript:submitUrl('vs-search.php')";>-->
+						</div>
+						<script type="text/javascript" language="JavaScript">
+						
+							<!--function submitUrl (turl) {-->
+							<!--var frm = document.getElementById('form1');-->
+							<!--frm.action = turl;-->
+							<!--frm.submit();-->
+							<!--}-->
+						
+						</script>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="wzabox">
+			<div class="newswz">
+				<ul>
+					<li>
+						<a id="wzaa" rel="nofollow" target="_blank" href="http://www.163.com">
+							<span></span>
+						</a>
+					</li>
+					<li>
+						<a id="wzab" rel="nofollow" target="_blank" href="http://www.sina.com.cn">
+							<span></span>
+						</a>
+					</li>
+					<li>
+						<a id="wzac" rel="nofollow" target="_blank" href="http://www.sohu.com">
+							<span></span>
+						</a>
+					</li>
+					<li>
+						<a id="wzad" rel="nofollow" target="_blank" href="http://www.ifeng.com">
+							<span></span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="shopwz">
+				<ul>
+					<li>
+						<a id="wzae" rel="nofollow" target="_blank" href="http://www.taobao.com">
+							<span></span>
+						</a>
+					</li>
+					<li>
+						<a id="wzaf" rel="nofollow" target="_blank" href="http://www.360buy.com">
+							<span></span>
+						</a>
+					</li>
+					<li>
+						<a id="wzag" rel="nofollow" target="_blank" href="http://www.dangdang.com">
+							<span></span>
+						</a>
+					</li>
+					<li>
+						<a id="wzah" rel="nofollow" target="_blank" href="http://www.amazon.cn">
+							<span></span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="ftw">
+			<div id="ft">
+				<div class="ftbox">
+					<h3>购物中心</h3>
+					<ul>
+						<li>
+							<a href="http://www.dangdang.com" rel="nofollow" target="_blank">当当网</a>
+						</li>
+						<li>
+							<a href="http://www.amazon.cn" rel="nofollow" target="_blank">亚马逊</a>
+						</li>
+						<li>
+							<a href="http://www.360buy.com" rel="nofollow" target="_blank">京东商城</a>
+						</li>
+						<li>
+							<a href="http://www.tmall.com" rel="nofollow" target="_blank">天猫商城</a>
+						</li>
+						<li>
+							<a href="http://www.yihaodian.com" rel="nofollow" target="_blank">一号店</a>
+						</li>
+					</ul>
+				</div>
+				<div class="ftbox">
+					<h3>团购导航</h3>
+					<ul>
+						<li>
+							<a href="http://www.meituan.com" rel="nofollow" target="_blank">美团</a>
+						</li>
+						<li>
+							<a href="http://t.dianping.com" rel="nofollow" target="_blank">大众点评团</a>
+						</li>
+						<li>
+							<a href="http://www.lashou.com" rel="nofollow" target="_blank">拉手网</a>
+						</li>
+						<li>
+							<a href="http://www.nuomi.com" rel="nofollow" target="_blank">糯米网</a>
+						</li>
+						<li>
+							<a href="http://www.55tuan.com" rel="nofollow" target="_blank">窝窝团</a>
+						</li>
+					</ul>
+				</div>
+				<div class="ftbox">
+					<h3>影视娱乐</h3>
+					<ul>
+						<li>
+							<a href="http://www.youku.com" rel="nofollow" target="_blank">优酷</a>
+						</li>
+						<li>
+							<a href="http://www.tudou.com" rel="nofollow" target="_blank">土豆</a>
+						</li>
+						<li>
+							<a href="http://www.iqiyi.com" rel="nofollow" target="_blank">爱奇艺</a>
+						</li>
+						<li>
+							<a href="http://tv.sohu.com" rel="nofollow" target="_blank">搜狐视频</a>
+						</li>
+						<li>
+							<a href="http://v.qq.com" rel="nofollow" target="_blank">腾讯视频</a>
+						</li>
+					</ul>
+				</div>
+				<div class="ftbox">
+					<h3>旅游资讯</h3>
+					<ul>
+						<li>
+							<a href="http://www.ctrip.com" rel="nofollow" target="_blank">携程</a>
+						</li>
+						<li>
+							<a href="http://www.qunar.com" rel="nofollow" target="_blank">去哪儿</a>
+						</li>
+						<li>
+							<a href="http://www.elong.com" rel="nofollow" target="_blank">艺龙</a>
+						</li>
+						<li>
+							<a href="http://www.kuxun.cn" rel="nofollow" target="_blank">酷讯</a>
+						</li>
+						<li>
+							<a href="http://www.tuniu.com" rel="nofollow" target="_blank">涂牛</a>
+						</li>
+					</ul>
+				</div>
+				<a href="http://www.zhihu.com" rel="nofollow" target="_blank">
+					<div class="ftbox service">
+						<p class="num">qiguomaer@bupt</p>	
+					</div>
+				</a>
+			</div>
+		</div>
+		<div style="display:none">
+		</div>
+	</body>
+</html>
